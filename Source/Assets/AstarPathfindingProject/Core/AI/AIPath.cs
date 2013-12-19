@@ -325,7 +325,7 @@ public class AIPath : MonoBehaviour {
 		} else if (rigid != null) {
 			rigid.AddForce (dir);
 		} else {
-			transform.Translate (dir*Time.deltaTime, Space.World);
+			tr.Translate (dir*Time.deltaTime, Space.World);
 		}
 	}
 	
